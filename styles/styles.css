@@ -1,0 +1,62 @@
+/* ===== YOUR CSS GOES HERE ===== */
+/* ===== START WITH GLOBAL STYLES THEN USE MEDIA QUERIES FOR LAYOUT ADJUSTMENTS ===== */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+main {
+    /*background image will be at ./images/bostonHarborNight.jpg*/
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/boston.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button {
+    background: #C6607C;
+    color: white;
+    width: 160px;
+    height: 55px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+main > div > h1, h2, p {
+    color: aliceblue;
+    /* black hue background to contrast the text */
+    background: rgba(0, 0, 0, 0.5);
+    /* wrap content to fit the text */
+    width: fit-content;
+    /* some faded away edges to smooth out the edges */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+h1 {
+    /* uses Comic Neue font */
+    font-family: 'Comic Neue', cursive;
+}
+/* navigation bar and sub-title use Source Sans Pro font */
+h2, button {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+    /*use Gotu font for the paragraph text*/
+    font-family: 'Gotu', sans-serif;
+}
+.horizontal-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
